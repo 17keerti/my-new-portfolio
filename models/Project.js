@@ -40,3 +40,5 @@ Project.init(
     modelName: "project",
   }
 );
+
+module.exports = Project;

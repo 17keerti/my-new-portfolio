@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Get Unbored",
+    "description": "This app will generate jokes and random activities so that you are never bored and have something fun to do. User can save their favorites jokes and activities with the like button and access them in favorites page.",
+    "image_url": "password12345",
+    "repo_url": "https://github.com/17keerti/get-unbored",
+    "website_url": "https://17keerti.github.io/get-unbored/" 
+  },
+  {
+    "name": "Work Day Scheduler",
+    "description": "This is a calendar application that allows user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.",
+    "image_url": "password12345",
+    "repo_url": "https://github.com/17keerti/Weather-Dashboard",
+    "website_url": "https://17keerti.github.io/Work-Day-Scheduler/" 
+  },
+  {
+    "name": "Weather Dashboard",
+    "description": "It is a weather dashboard that takes input from user to search for weather outlook for multiple cities. It uses the OpenWeather API to retrieve weather data and uses localStorage to store any cities that have been searched and allows user to call them.",
+    "image_url": "password12345",
+    "repo_url": "https://github.com/17keerti/Weather-Dashboard",
+    "website_url": "https://17keerti.github.io/Weather-Dashboard/" 
+  },
+  {
+    "name": "Password Generator",
+    "description": "This generates a random password based on user-selected criteria. It gives several prompts to users to select options. Once all prompts are answered, the user will be given a password of their choice.",
+    "image_url": "password12345",
+    "repo_url": "https://github.com/17keerti/password-generator-29thmarch",
+    "website_url": "https://17keerti.github.io/password-generator-29thmarch/" 
+  }
+]
