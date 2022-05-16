@@ -23,13 +23,11 @@
         <p class="uk-text-left">Description- <br>
           {{description}}
         </p>
+
         <p class="uk-text-left"> Technology used:<br>
-          HTML<br>
-          CSS<br>
-          JavaScript<br>
-          Materialize<br>
-          UIKit<br>
-          Moment.js
+          {{#each technologies }}
+        <p class="uk-text-left">{{name}}</p>
+        {{/each}}
         </p>
         <p class="uk-text-left">
           Website Link: <a href="{{website_url}}">Link to website</a><br>
