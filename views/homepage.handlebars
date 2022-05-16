@@ -14,7 +14,9 @@
 </div>
 
 <div class="uk-child-width-expand@s uk-text-center uk-height-match uk-margin-small-left" uk-grid>
+  {{#each projects as |project| }}
   <div>
+
     <div class="uk-card uk-card-default">
       <div class="uk-card-media-top">
         <img
@@ -22,78 +24,21 @@
           width="1800" height="1200" alt="">
       </div>
       <div class="uk-card-body">
-        <h3 class="uk-card-title">Get Unbored</h3>
-        <p>This app will generate jokes and random activities so that you are never bored and have something fun to
-          do. User can save their favorites jokes and activities with the like button and access them in favorites
-          page.</p>
+        <h3 class="uk-card-title">{{project.name}}</h3>
+        <p>{{project.description}}</p>
         <p uk-margin>
-          <button class="uk-button uk-button-primary"
-            onclick="window.location.href='https://17keerti.github.io/get-unbored/'">Link to
+          <button class="uk-button uk-button-primary" onclick="window.location.href='{{project.website_url}}'">Link to
             website</button>
         </p>
       </div>
     </div>
-  </div>
 
-  <div>
-    <div class="uk-card uk-card-default">
-      <div class="uk-card-media-top">
-        <img
-          src="https://blog.goway.com/globetrotting/wp-content/uploads/2017/06/Female-tourist-photographing-the-Eiffel-Tower-in-Paris-France_525964882.jpg"
-          width="1800" height="1200" alt="">
-      </div>
-      <div class="uk-card-body">
-        <h3 class="uk-card-title">Work Day Scheduler</h3>
-        <p>This is a calendar application that allows user to save events for each hour of the day. This app will run
-          in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
-      </div>
-      <p uk-margin>
-        <button class="uk-button uk-button-primary"
-          onclick="window.location.href='https://17keerti.github.io/Work-Day-Scheduler/'">Link to
-          website</a></button>
-      </p>
-    </div>
+
   </div>
-  <div>
-    <div class="uk-card uk-card-default">
-      <div class="uk-card-media-top">
-        <img
-          src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-3155666.jpg&fm=jpg"
-          width="1800" height="1200" alt="">
-      </div>
-      <div class="uk-card-body">
-        <h3 class="uk-card-title">Weather Dashboard</h3>
-        <p>It is a weather dashboard that takes input from user to search for weather outlook for multiple cities. It
-          uses the OpenWeather API to retrieve weather data and uses localStorage to store any cities that have been
-          searched and allows user to call them.</p>
-        <p uk-margin>
-          <button class="uk-button uk-button-primary"
-            onclick="window.location.href='https://17keerti.github.io/Weather-Dashboard/'">Link to website</button>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="uk-card uk-card-default">
-      <div class="uk-card-media-top">
-        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" width="1800" height="1200"
-          alt="">
-      </div>
-      <div class="uk-card-body">
-        <h3 class="uk-card-title">Password Generator</h3>
-        <p>This generates a random password based on user-selected criteria. It gives several prompts to users to
-          select options. Once all prompts are answered, the user will be given a password of their choice.</p>
-        <p uk-margin>
-          <button class="uk-button uk-button-primary"
-            onclick="window.location.href='https://17keerti.github.io/password-generator-29thmarch/'">Link to
-            website</button>
-        </p>
-      </div>
-    </div>
-  </div>
+  {{/each}}
 </div>
 
-</div>
+
 <nav class="uk-navbar-container" uk-navbar>
   <div class="uk-text">
     <h2>
