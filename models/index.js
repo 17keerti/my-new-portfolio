@@ -1,4 +1,4 @@
 const Project = require("./Project");
-// const Technology = require("./Technology");
+const Technology = require("./Technology");
 
-module.exports = { Project };
+module.exports = { Project, Technology };
