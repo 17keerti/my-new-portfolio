@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Project } = require("../models");
+const { Project, ProjectTechnology, Technology } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
@@ -17,7 +17,14 @@ router.get("/", async (req, res) => {
 
 router.get("/project/:id", async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id);
+    const projectData = await Project.findByPk(req.params.id, {
+      include: [
+        {
+          model: ProjectTechnology,
+          model: Technology,
+        },
+      ],
+    });
     const project = projectData.get({ plain: true });
     console.log("Route for project id");
     console.log(project);
