@@ -15,4 +15,16 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/project/:id", async (req, res) => {
+  try {
+    const projectData = await Project.findByPk(req.params.id);
+    const project = projectData.get({ plain: true });
+    console.log("Route for project id");
+    console.log(project);
+    res.render("project", project);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
