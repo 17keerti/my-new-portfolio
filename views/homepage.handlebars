@@ -2,7 +2,7 @@
   <div class="uk-navbar-left">
     <a class="uk-navbar-item uk-logo" href="#">Keerti</a>
   </div>
-  <div class="uk-navbar-right">
+  <div class="uk-navbar-right uk-visible@s">
     <ul class="uk-navbar-nav">
       <li class="uk-active"><a href="/"><span uk-icon="home"></span>Home</a></li>
       <li><a href="#aboutme"><span uk-icon="user"></span>About</a></li>
@@ -10,7 +10,18 @@
       <li><a href="#contactme"><span uk-icon="user"></span>Contact me</a></li>
     </ul>
   </div>
+  <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
 </nav>
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href="/"><span uk-icon="home"></span>Home</a></li>
+      <li><a href="#aboutme"><span uk-icon="user"></span>About</a></li>
+      <li><a href="#projects"><span uk-icon="folder"></span>Projects</a></li>
+      <li><a href="#contactme"><span uk-icon="user"></span>Contact me</a></li>
+    </ul>
+  </div>
+</div>
 <div class="uk-text uk-padding-small">
   <h2 id="aboutme">
     About me

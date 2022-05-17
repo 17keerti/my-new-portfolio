@@ -6,7 +6,6 @@ router.get("/", async (req, res) => {
     const projectData = await Project.findAll();
 
     const projects = projectData.map((project) => project.get({ plain: true }));
-    console.log(projects);
     res.render("homepage", {
       projects,
     });
